@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="digits.css">
+
+</head>
+    
+
+<body>
+    <div class="container-fluid bg-container">
+        <div class="row">
+            <div class="col-12 col-md-6 m-auto pt-5 pb-5">
+                <p class="digits-duel-text">Digits Duel</p>
+                <p class="text-center game-description mt-0">
+                    Find out the right number between 1 to 100
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 guess-bg-container text-center">
+                <h1 class="guess-heading">Guess The Number</h1>
+                <input type="text" class="user-input mt-3" id="userInput" />
+                <div>
+                    <button class="btn check-guess mt-5" onclick="checkGuess()">
+                        Check
+                    </button>
+                </div>
+                <p class="game-result" id="gameResult"></p>
+            </div>
+        </div>
+    </div>
+<script src="digits.js"></script>
+</body>
+</html>
